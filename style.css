@@ -7,13 +7,15 @@
     box-sizing: border-box;
 }
 
-h1,h2 {
+h1,h2, h3 {
     font-family: 'DM Serif Display';
 }
 
 p {
     font-family: 'Jost';
 }
+
+/* Header Section */
 
 .header {
     display: flex;
@@ -23,10 +25,109 @@ p {
     padding: 0 10%;
 }
 
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-name {
+    font-size: 40px;
+    font-weight: 600;
+    color: #292F36;
+}
+
+.logo {
+    height: 30px; /* already correct */
+    width: auto;
+}
+
 .header ul {
     display: flex;
     gap: 30px;
     list-style: none;
     cursor: pointer;
+}
+
+/* Hero Section */
+
+.hero {
+    background-image: url('img/living-room.jpg');
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 0 150px;
+}
+
+.hero-content {
+    display: flex;
+    padding-top: 100px;
+    padding-left: 100px;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 65px;
+}
+
+.hero-btn {
+    margin-top: 30px;
+    width: fit-content;
+    padding: 16px 36px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #292F36;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #1f252b;
+    transform: translateY(-2px);
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    padding-top: 75px;
+}
+
+.services-content {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.services-content h3 {
+    font-size: 24px;
+}
+
+.services-btn {
+    margin-top: 10px;
+    align-self: center;
+    padding: 14px 32px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #292F36;
+    background-color: transparent;
+    border: 2px solid #292F36;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services-btn:hover {
+    background-color: #292F36;
+    color: white;
+    transform: translateY(-2px);
 }
 
